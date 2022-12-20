@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/thesoundstable.com-react/static/css/main.bcc54842.css",
+    "main.js": "/thesoundstable.com-react/static/js/main.4e6ac6ac.js",
+    "static/js/787.51d04ad4.chunk.js": "/thesoundstable.com-react/static/js/787.51d04ad4.chunk.js",
+    "static/media/highRes.webp": "/thesoundstable.com-react/static/media/highRes.b011e32c02cce6b38328.webp",
+    "index.html": "/thesoundstable.com-react/index.html",
+    "main.bcc54842.css.map": "/thesoundstable.com-react/static/css/main.bcc54842.css.map",
+    "main.4e6ac6ac.js.map": "/thesoundstable.com-react/static/js/main.4e6ac6ac.js.map",
+    "787.51d04ad4.chunk.js.map": "/thesoundstable.com-react/static/js/787.51d04ad4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bcc54842.css",
+    "static/js/main.4e6ac6ac.js"
+  ]
+}
