@@ -1,40 +1,40 @@
 import React from "react";
 
+import { useGlobalContext } from "src/hooks/useGlobalContext";
+import { getImageFromType } from "src/logic/utils";
+
 import styles from "./Header.module.css";
 import stylesButton from "./Button.module.css";
-
-import { useGlobalContext } from "src/hooks/useGlobalContext";
 
 export const Header: React.FC = () => {
   const { title } = useGlobalContext();
 
+  const image = getImageFromType(title);
+
   return (
     <header>
-      {/* <div>
-        <h1 id="head" className={styles.title}>
-          {title}
-        </h1>
-      </div> */}
       <div className={styles.firstRowHeader}>
-        {/* <div className={styles.headerIndex}>
-          <a
-            href="https://thesoundstable.com"
-            className={stylesButton.buttonIndex}
-          >
-            THE SOUNDS TABLE
-          </a>
-        </div> */}
+        {image && (
+          <div className={styles.headerIndex}>
+            <a
+              href="https://thesoundstable.com"
+              className={stylesButton.buttonIndex}
+            >
+              THE SOUNDS TABLE
+            </a>
+          </div>
+        )}
         <div className={styles.headerTitle}>
-          <h1 id="head" className={styles.title}>
-            {title}
-          </h1>
+          <h1 className={styles.title}>{title}</h1>
         </div>
         <div>
-          {/* <img
-            src="./elxokasimage.webp"
-            className="mainLogoXks"
-            alt="logo principal"
-          /> */}
+          {image && (
+            <img
+              src={image}
+              className={styles.peopleLogo}
+              alt={`Logo principal ${title}`}
+            />
+          )}
         </div>
       </div>
     </header>

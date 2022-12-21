@@ -2,10 +2,10 @@ import React from "react";
 
 import { ShareLink } from "./ShareLink";
 
-import logoTwitter from "../../images/logoTwitter.png";
-import logoFacebook from "../../images/logoFacebook.png";
-import logoTg from "../../images/logoTg.png";
-import logoWhatsapp from "../../images/logoWhatsapp.png";
+import logoTwitter from "../../images/share/logoTwitter.png";
+import logoFacebook from "../../images/share/logoFacebook.png";
+import logoTg from "../../images/share/logoTg.png";
+import logoWhatsapp from "../../images/share/logoWhatsapp.png";
 
 export enum ShareType {
   Twitter,

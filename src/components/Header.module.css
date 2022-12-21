@@ -23,8 +23,21 @@
   flex: 5;
 }
 
+.peopleLogo {
+  background: #555;
+  margin-right: 10px;
+  float: right;
+  width: 146px;
+  height: 83px;
+}
+
 @media (max-width: 480px) {
   .headerIndex {
     width: 100px;
+  }
+
+  .peopleLogo {
+    width: 108px;
+    height: 63px;
   }
 }

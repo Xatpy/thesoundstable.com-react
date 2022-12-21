@@ -1,7 +1,7 @@
 import { createContext, useContext } from "react";
 export type GlobalContent = {
   title: string;
-  setTitle: (c: string) => void;
+  setTitle: (s: string) => void;
   hashAudiosHowl: any;
   setHashAudiosHowl: (x: any) => void;
 };

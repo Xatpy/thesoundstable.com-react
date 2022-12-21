@@ -22,8 +22,8 @@ const App: React.FC<AppProps> = ({ data }) => {
   return (
     <MyGlobalContext.Provider
       value={{
-        title: title,
-        setTitle: setTitle,
+        title,
+        setTitle,
         hashAudiosHowl,
         setHashAudiosHowl,
       }}
