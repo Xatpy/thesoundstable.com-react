@@ -2,11 +2,9 @@ import React from "react";
 
 import { useEffect, useState, useRef } from "react";
 
-import "./App.css";
+// import "./App.css";
 
 import { MyGlobalContext, useGlobalContext } from "./hooks/useGlobalContext";
-
-import { initApp } from "./logic/app";
 
 import { Header } from "./components/Header";
 import { Main } from "./components/Main";
@@ -23,13 +21,15 @@ function App() {
   const [hashAudiosHowl, setHashAudiosHowl] = useState<any>({});
 
   useEffect(() => {
-    if (firstRender.current) {
+    if (firstRender.current && data !== null) {
       firstRender.current = false;
+      console.log("Exit", data);
       return;
     }
 
     console.log("First render");
     const fetchData = async () => {
+      debugger;
       const data = await fetch(
         "https://raw.githubusercontent.com/Xatpy/thesoundstable/main/ElXokas/data.json"
       );
@@ -40,7 +40,6 @@ function App() {
     // call the function
     fetchData()
       .then((e) => {
-        console.log("vamos", e);
         setDataJson(e);
         setTitle(e.title);
       })

@@ -4,27 +4,37 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <div>Not found!!!</div>,
-  },
-  {
-    path: "ElXokas",
-    element: <div>ElXokas</div>,
-  },
-]);
+import { NotFound } from "./components/NotFound";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
+console.log(
+  `The current URL is ${window.location.pathname}${window.location.search}${window.location.hash}`
+);
+console.log("IndexTest 4");
+
+const basePath = "/thesoundstable.com-react";
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" children={<App />} />
+        <Route exact path={basePath} children={<App />} />
+
+        <Route path={`/ElXokas`} children={<App />} />
+        <Route path={`/xokas`} children={<App />} />
+        <Route path={`${basePath}/ElXokas`} children={<App />} />
+        <Route path={`${basePath}/xokas`} children={<App />} />
+
+        {/* Not found */}
+        <Route path="*" children={<NotFound />} />
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
