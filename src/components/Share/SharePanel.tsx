@@ -11,10 +11,10 @@ export const SharePanel: React.FC = () => {
       <span>
         <em>Compartir:</em>
       </span>
-      <ShareComponent type={ShareType.Twitter} />
-      <ShareComponent type={ShareType.Facebook} />
-      <ShareComponent type={ShareType.Telegram} />
       <ShareComponent type={ShareType.Whatsapp} />
+      <ShareComponent type={ShareType.Twitter} />
+      {/* <ShareComponent type={ShareType.Facebook} /> */}
+      <ShareComponent type={ShareType.Telegram} />
     </div>
   );
 };

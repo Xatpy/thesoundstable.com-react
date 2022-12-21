@@ -61,6 +61,7 @@ export const Main: React.FC<Props> = ({ data }) => {
                 text={data.sounds[i].text}
                 urlSound={urlSound}
                 id={i.toString()}
+                tag={data.sounds[i].tag ?? ""}
               />
             );
           }

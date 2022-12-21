@@ -2,7 +2,7 @@
   "title": "Rubius",
   "sounds": [
     {
-      "text": "Necesitais salir y tocar cesped",
+      "text": "Necesitáis salir y tocar cesped",
       "soundURL": "https://raw.githubusercontent.com/Xatpy/thesoundstable/master/Rubius/data/necesitais-salir-y-tocar-cesped.mp3"
     },
     {
@@ -58,7 +58,7 @@
       "soundURL": "https://raw.githubusercontent.com/Xatpy/thesoundstable/master/Rubius/data/que-cojoneee.mp3"
     },
     {
-      "text": "No hijodeputa ponte a estudiar y deja la droga",
+      "text": "No...! Ponte a estudiar...",
       "soundURL": "https://raw.githubusercontent.com/Xatpy/thesoundstable/master/Rubius/data/no-hijodeputa-ponte-a-estudiar-y-deja-la-droga.mp3"
     },
     {
