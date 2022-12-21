@@ -8,28 +8,81 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import { NotFound } from "./components/NotFound";
 
+import dataElXokas from "src/data/elXokas.json";
+import dataIbai from "src/data/ibai.json";
+import dataIlloJuan from "src/data/illoJuan.json";
+import dataLaVidaModerna from "src/data/laVidaModerna.json";
+import dataLuisEnrique from "src/data/luisEnrique.json";
+import dataMaldini from "src/data/maldini.json";
+import dataRubius from "src/data/rubius.json";
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
 console.log(
-  `The current URL is ${window.location.pathname}${window.location.search}${window.location.hash}`
+  `5 The current URL is ${window.location.pathname}${window.location.search}${window.location.hash}`
 );
-console.log("IndexTest 4");
 
 const basePath = "/thesoundstable.com-react";
+
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" children={<App />} />
-        <Route exact path={basePath} children={<App />} />
+        <Route exact path="/" children={<App data={dataElXokas} />} />
+        <Route exact path={basePath} children={<App data={dataElXokas} />} />
 
-        <Route path={`/ElXokas`} children={<App />} />
-        <Route path={`/xokas`} children={<App />} />
-        <Route path={`${basePath}/ElXokas`} children={<App />} />
-        <Route path={`${basePath}/xokas`} children={<App />} />
+        <Route path={`/ElXokas`} children={<App data={dataElXokas} />} />
+        <Route path={`/xokas`} children={<App data={dataElXokas} />} />
+        <Route
+          path={`${basePath}/ElXokas`}
+          children={<App data={dataElXokas} />}
+        />
+        <Route
+          path={`${basePath}/xokas`}
+          children={<App data={dataElXokas} />}
+        />
+
+        <Route path={`/Ibai`} children={<App data={dataIbai} />} />
+        <Route path={`${basePath}/Ibai`} children={<App data={dataIbai} />} />
+
+        <Route
+          path={`/LuisEnrique`}
+          children={<App data={dataLuisEnrique} />}
+        />
+        <Route
+          path={`${basePath}/LuisEnrique`}
+          children={<App data={dataLuisEnrique} />}
+        />
+
+        <Route path={`/IlloJuan`} children={<App data={dataIlloJuan} />} />
+        <Route
+          path={`${basePath}/IlloJuan`}
+          children={<App data={dataIlloJuan} />}
+        />
+
+        <Route
+          path={`/LaVidaModerna`}
+          children={<App data={dataLaVidaModerna} />}
+        />
+        <Route
+          path={`${basePath}/LaVidaModerna`}
+          children={<App data={dataLaVidaModerna} />}
+        />
+
+        <Route path={`/Maldini`} children={<App data={dataMaldini} />} />
+        <Route
+          path={`${basePath}/Maldini`}
+          children={<App data={dataMaldini} />}
+        />
+
+        <Route path={`/Rubius`} children={<App data={dataRubius} />} />
+        <Route
+          path={`${basePath}/Rubius`}
+          children={<App data={dataRubius} />}
+        />
 
         {/* Not found */}
         <Route path="*" children={<NotFound />} />

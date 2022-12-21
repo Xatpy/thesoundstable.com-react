@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-import { Howl, Howler } from "howler";
+import { Howl } from "howler";
 
 import { Button } from "src/components/Button";
 

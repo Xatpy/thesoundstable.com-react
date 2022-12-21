@@ -1,6 +1,5 @@
 import React from "react";
-
-import { useEffect, useState, useRef } from "react";
+import { useState } from "react";
 
 // import "./App.css";
 
@@ -12,51 +11,24 @@ import { Button } from "./components/Button";
 
 import { SharePanel } from "src/components/Share/SharePanel";
 
-function App() {
-  const firstRender = useRef(true);
+type AppProps = {
+  data: any;
+};
 
-  const [data, setDataJson] = useState(null);
-
-  const [copy, setTitle] = useState<string>("Admin");
+const App: React.FC<AppProps> = ({ data }) => {
+  const [title, setTitle] = useState<string>(data.title ?? "The Sounds Table");
   const [hashAudiosHowl, setHashAudiosHowl] = useState<any>({});
-
-  useEffect(() => {
-    if (firstRender.current && data !== null) {
-      firstRender.current = false;
-      console.log("Exit", data);
-      return;
-    }
-
-    console.log("First render");
-    const fetchData = async () => {
-      debugger;
-      const data = await fetch(
-        "https://raw.githubusercontent.com/Xatpy/thesoundstable/main/ElXokas/data.json"
-      );
-      // convert data to json
-      const json = await data.json();
-      return json;
-    };
-    // call the function
-    fetchData()
-      .then((e) => {
-        setDataJson(e);
-        setTitle(e.title);
-      })
-      // make sure to catch any error
-      .catch(console.error);
-  }, []);
 
   return (
     <MyGlobalContext.Provider
       value={{
-        title: copy,
+        title: title,
         setTitle: setTitle,
         hashAudiosHowl,
         setHashAudiosHowl,
       }}
     >
-      <Header title="The Sounds Table" />
+      <Header />
       <SharePanel />
       <Main data={data} />
     </MyGlobalContext.Provider>
@@ -67,6 +39,6 @@ function App() {
         urlSound="https://raw.githubusercontent.com/Xatpy/SoundsTable/master/ElXokas/callate.mp3"
       /> */
   );
-}
+};
 
 export default App;

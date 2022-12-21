@@ -3,11 +3,11 @@ import React from "react";
 import styles from "./Header.module.css";
 import stylesButton from "./Button.module.css";
 
-type Props = {
-  title: string;
-};
+import { useGlobalContext } from "src/hooks/useGlobalContext";
 
-export const Header: React.FC<Props> = ({ title }) => {
+export const Header: React.FC = () => {
+  const { title } = useGlobalContext();
+
   return (
     <header>
       {/* <div>
@@ -26,7 +26,7 @@ export const Header: React.FC<Props> = ({ title }) => {
         </div> */}
         <div className={styles.headerTitle}>
           <h1 id="head" className={styles.title}>
-            The Sounds Table
+            {title}
           </h1>
         </div>
         <div>

@@ -57,5 +57,6 @@ export const ShareComponent: React.FC<Props> = ({ type }) => {
         throw new Error();
     }
   };
+
   return getShareComponentByType(type);
 };
