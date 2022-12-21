@@ -13,7 +13,7 @@ export const ShareLink: React.FC<ShareLinkProps> = ({ href, title, src }) => {
     <a
       aria-label={title}
       href={href}
-      rel="noopener"
+      rel="noopener noreferrer"
       target="_blank"
       title={title}
     >

@@ -11,7 +11,7 @@ type ButtonProps = {
 };
 
 export const Button: React.FC<ButtonProps> = ({ text, id, urlSound }) => {
-  const { title: copy, hashAudiosHowl } = useGlobalContext();
+  const { hashAudiosHowl } = useGlobalContext();
 
   const onClick = (evt: any) => {
     evt.preventDefault();
@@ -19,8 +19,6 @@ export const Button: React.FC<ButtonProps> = ({ text, id, urlSound }) => {
     console.log(text);
     hashAudiosHowl[target.id].play();
   };
-
-  console.log("Button", copy);
 
   return (
     <div className={styles.divButton}>

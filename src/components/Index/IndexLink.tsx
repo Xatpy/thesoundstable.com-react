@@ -13,15 +13,13 @@ type Props = {
 export const IndexLink: React.FC<Props> = ({ href, imagePath, title }) => {
   return (
     <div className="divSubsection divSubsectionImage">
-      <Link to={href}>
-        <a className="linkSubpage">
-          <img
-            src={imagePath}
-            className="logoSubsection"
-            alt={`Logo principal ${title}`}
-          />
-          <label className="lblSubsection">{title}</label>
-        </a>
+      <Link to={href} className="linkSubpage">
+        <img
+          src={imagePath}
+          className="logoSubsection"
+          alt={`Logo principal ${title}`}
+        />
+        <label className="lblSubsection">{title}</label>
       </Link>
     </div>
   );

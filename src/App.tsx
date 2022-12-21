@@ -3,11 +3,11 @@ import { useState } from "react";
 
 // import "./App.css";
 
-import { MyGlobalContext, useGlobalContext } from "./hooks/useGlobalContext";
+import { MyGlobalContext } from "./hooks/useGlobalContext";
 
 import { Header } from "./components/Header";
 import { Main } from "./components/Main";
-import { Button } from "./components/Button";
+// import { Button } from "./components/Button";
 
 import { SharePanel } from "src/components/Share/SharePanel";
 

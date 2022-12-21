@@ -1,4 +1,7 @@
 .divSubsection {
+  width: 250px;
+  height: 250px;
+
   position: relative;
   text-align: center;
   color: white;
@@ -14,8 +17,8 @@
 }
 
 .divSubsectionImage {
-  width: 40%;
-  height: 40%;
+  /* width: 40%;
+  height: 40%; */
 
   -moz-transition: all 2s ease-in;
   -o-transition: all 2s ease-in;

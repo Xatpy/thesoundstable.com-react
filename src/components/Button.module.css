@@ -82,6 +82,10 @@ Link: https://codepen.io/mkvug/pen/meJyr
   color: grey;
 }
 
+.buttonIndex:hover {
+  background-color: rgb(200 200 200);
+}
+
 .buttonIndex {
   position: relative;
   display: block;
