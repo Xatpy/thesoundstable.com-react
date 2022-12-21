@@ -13,10 +13,12 @@
   align-content: center;
   justify-content: space-between;
   align-items: center;
+  margin-top: 15px;
 }
 
 .headerIndex {
   width: 200px;
+  z-index: 1;
 }
 
 .headerTitle {
@@ -31,6 +33,13 @@
   height: 83px;
 }
 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .title {
+    font-size: 7.5vh;
+  }
+}
+
 @media (max-width: 480px) {
   .headerIndex {
     width: 100px;
@@ -39,5 +48,9 @@
   .peopleLogo {
     width: 108px;
     height: 63px;
+  }
+
+  .title {
+    font-size: 6vh;
   }
 }

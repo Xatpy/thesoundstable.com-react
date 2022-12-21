@@ -1,7 +1,7 @@
 import styles from "./NotFound.module.css";
 
 export const NotFound: React.FC = () => {
-  document.title = `Not Found - ${window.location.href}`;
+  document.title = `[NF] - ${window.location.href}`;
 
   return (
     <section>

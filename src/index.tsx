@@ -21,9 +21,9 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
-console.log(
-  `1 The current URL is ${window.location.pathname}${window.location.search}${window.location.hash}`
-);
+// console.log(
+//   `1 The current URL is ${window.location.pathname}${window.location.search}${window.location.hash}`
+// );
 
 // const basePath = "/thesoundstable.com-react";
 const basePath = "/";

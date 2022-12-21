@@ -24,7 +24,6 @@ export const Button: React.FC<ButtonProps> = ({
   const onClick = (evt: any) => {
     evt.preventDefault();
     var target = evt.target || evt.srcElement; // Fix for Firefox
-    console.log(text);
     hashAudiosHowl[target.id].play();
   };
 
