@@ -3,6 +3,8 @@ import React from "react";
 import { useGlobalContext } from "src/hooks/useGlobalContext";
 import { getImageFromType } from "src/logic/utils";
 
+import { Link } from "react-router-dom";
+
 import styles from "./Header.module.css";
 import stylesButton from "./Button.module.css";
 
@@ -16,12 +18,9 @@ export const Header: React.FC = () => {
       <div className={styles.firstRowHeader}>
         {image && (
           <div className={styles.headerIndex}>
-            <a
-              href="https://thesoundstable.com"
-              className={stylesButton.buttonIndex}
-            >
+            <Link to="/" className={stylesButton.buttonIndex}>
               THE SOUNDS TABLE
-            </a>
+            </Link>
           </div>
         )}
         <div className={styles.headerTitle}>
