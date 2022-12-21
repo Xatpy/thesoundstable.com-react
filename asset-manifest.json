@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/thesoundstable.com-react/static/css/main.5c8a6b54.css",
-    "main.js": "/thesoundstable.com-react/static/js/main.8ef32dda.js",
+    "main.css": "/thesoundstable.com-react/static/css/main.de85ee48.css",
+    "main.js": "/thesoundstable.com-react/static/js/main.67c0e260.js",
     "static/js/787.51d04ad4.chunk.js": "/thesoundstable.com-react/static/js/787.51d04ad4.chunk.js",
     "static/media/highRes.webp": "/thesoundstable.com-react/static/media/highRes.b011e32c02cce6b38328.webp",
+    "static/media/rubius.jpeg": "/thesoundstable.com-react/static/media/rubius.152d6594888cfd130c2e.jpeg",
+    "static/media/elXokas.jpg": "/thesoundstable.com-react/static/media/elXokas.83c9575a2bbe3e4ec875.jpg",
+    "static/media/laVidaModerna.jpeg": "/thesoundstable.com-react/static/media/laVidaModerna.d5ec16e6da0ded48b4ee.jpeg",
+    "static/media/illoJuan.jpeg": "/thesoundstable.com-react/static/media/illoJuan.37de63105ac71971ef91.jpeg",
+    "static/media/luisEnrique.webp": "/thesoundstable.com-react/static/media/luisEnrique.c81da6d53f6ad1aa80b8.webp",
+    "static/media/ibai.jpeg": "/thesoundstable.com-react/static/media/ibai.f74ff5580e5b3357291f.jpeg",
+    "static/media/maldini.webp": "/thesoundstable.com-react/static/media/maldini.d364ace09133c07c3019.webp",
     "index.html": "/thesoundstable.com-react/index.html",
-    "main.5c8a6b54.css.map": "/thesoundstable.com-react/static/css/main.5c8a6b54.css.map",
-    "main.8ef32dda.js.map": "/thesoundstable.com-react/static/js/main.8ef32dda.js.map",
+    "main.de85ee48.css.map": "/thesoundstable.com-react/static/css/main.de85ee48.css.map",
+    "main.67c0e260.js.map": "/thesoundstable.com-react/static/js/main.67c0e260.js.map",
     "787.51d04ad4.chunk.js.map": "/thesoundstable.com-react/static/js/787.51d04ad4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c8a6b54.css",
-    "static/js/main.8ef32dda.js"
+    "static/css/main.de85ee48.css",
+    "static/js/main.67c0e260.js"
   ]
 }
