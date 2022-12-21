@@ -55,3 +55,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@media (max-width: 767px) {
+  html {
+    /* background: url(images/highRes.jpg) no-repeat center center fixed; */
+    background: url(images/highRes.webp) no-repeat center center fixed #612213;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    background: url(images/highRes.jpg) center center #612213;
+    background-repeat: repeat-y;
+    /* background: url(images/highRes.webp) no-repeat center center fixed #612213;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+  }
+}
