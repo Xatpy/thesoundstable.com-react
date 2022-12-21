@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/thesoundstable.com-react/static/css/main.de85ee48.css",
-    "main.js": "/thesoundstable.com-react/static/js/main.67c0e260.js",
-    "static/js/787.51d04ad4.chunk.js": "/thesoundstable.com-react/static/js/787.51d04ad4.chunk.js",
-    "static/media/highRes.webp": "/thesoundstable.com-react/static/media/highRes.b011e32c02cce6b38328.webp",
-    "static/media/rubius.jpeg": "/thesoundstable.com-react/static/media/rubius.152d6594888cfd130c2e.jpeg",
-    "static/media/elXokas.jpg": "/thesoundstable.com-react/static/media/elXokas.83c9575a2bbe3e4ec875.jpg",
-    "static/media/laVidaModerna.jpeg": "/thesoundstable.com-react/static/media/laVidaModerna.d5ec16e6da0ded48b4ee.jpeg",
-    "static/media/illoJuan.jpeg": "/thesoundstable.com-react/static/media/illoJuan.37de63105ac71971ef91.jpeg",
-    "static/media/luisEnrique.webp": "/thesoundstable.com-react/static/media/luisEnrique.c81da6d53f6ad1aa80b8.webp",
-    "static/media/ibai.jpeg": "/thesoundstable.com-react/static/media/ibai.f74ff5580e5b3357291f.jpeg",
-    "static/media/maldini.webp": "/thesoundstable.com-react/static/media/maldini.d364ace09133c07c3019.webp",
-    "index.html": "/thesoundstable.com-react/index.html",
-    "main.de85ee48.css.map": "/thesoundstable.com-react/static/css/main.de85ee48.css.map",
-    "main.67c0e260.js.map": "/thesoundstable.com-react/static/js/main.67c0e260.js.map",
-    "787.51d04ad4.chunk.js.map": "/thesoundstable.com-react/static/js/787.51d04ad4.chunk.js.map"
+    "main.css": "/static/css/main.1c06ef74.css",
+    "main.js": "/static/js/main.bce31958.js",
+    "static/js/787.51d04ad4.chunk.js": "/static/js/787.51d04ad4.chunk.js",
+    "static/media/highRes.webp": "/static/media/highRes.b011e32c02cce6b38328.webp",
+    "static/media/rubius.jpeg": "/static/media/rubius.152d6594888cfd130c2e.jpeg",
+    "static/media/elXokas.jpg": "/static/media/elXokas.83c9575a2bbe3e4ec875.jpg",
+    "static/media/laVidaModerna.jpeg": "/static/media/laVidaModerna.d5ec16e6da0ded48b4ee.jpeg",
+    "static/media/illoJuan.jpeg": "/static/media/illoJuan.37de63105ac71971ef91.jpeg",
+    "static/media/luisEnrique.webp": "/static/media/luisEnrique.c81da6d53f6ad1aa80b8.webp",
+    "static/media/ibai.jpeg": "/static/media/ibai.f74ff5580e5b3357291f.jpeg",
+    "static/media/maldini.webp": "/static/media/maldini.d364ace09133c07c3019.webp",
+    "index.html": "/index.html",
+    "main.1c06ef74.css.map": "/static/css/main.1c06ef74.css.map",
+    "main.bce31958.js.map": "/static/js/main.bce31958.js.map",
+    "787.51d04ad4.chunk.js.map": "/static/js/787.51d04ad4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de85ee48.css",
-    "static/js/main.67c0e260.js"
+    "static/css/main.1c06ef74.css",
+    "static/js/main.bce31958.js"
   ]
 }
