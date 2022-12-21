@@ -11,9 +11,6 @@ html,
 body {
   margin: 0;
   height: 100%;
-
-  /* display: flex;
-  flex-direction: column; */
 }
 
 * {
@@ -38,7 +35,6 @@ html {
   -o-background-size: cover;
   background-size: cover;
   font-family: "Lobster", cursive;
-  /* font-family: "Opens Sans"; */
   font-display: swap;
 }
 
@@ -58,7 +54,6 @@ code {
 
 @media (max-width: 767px) {
   html {
-    /* background: url(images/highRes.jpg) no-repeat center center fixed; */
     background: url(images/highRes.webp) no-repeat center center fixed #612213;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -71,10 +66,5 @@ code {
   html {
     background: url(images/highRes.jpg) center center #612213;
     background-repeat: repeat-y;
-    /* background: url(images/highRes.webp) no-repeat center center fixed #612213;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
   }
 }
