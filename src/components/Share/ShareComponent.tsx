@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useGlobalContext } from "src/hooks/useGlobalContext";
+
 import { ShareLink } from "./ShareLink";
 
 import logoTwitter from "../../images/share/logoTwitter.png";
@@ -19,28 +21,35 @@ type Props = {
 };
 
 export const ShareComponent: React.FC<Props> = ({ type }) => {
+  const { title } = useGlobalContext();
   const getShareComponentByType = (type: ShareType): React.ReactElement => {
+    const url = window.location.href;
+
     switch (type) {
       case ShareType.Facebook:
         return (
           <ShareLink
-            href="https://www.facebook.com/sharer/sharer.php?u=https://thesoundstable.com/"
+            href={`https://www.facebook.com/sharer/sharer.php?u=${url}`}
             title="Facebook"
             src={logoFacebook}
           />
         );
-      case ShareType.Twitter:
+      case ShareType.Twitter: {
+        const tweetMessage = encodeURI(
+          `🎶 ${title} Sounds Table - La web app con sus mejores sonidos: `
+        );
         return (
           <ShareLink
-            href="https://twitter.com/intent/tweet?text=🎶%20The%20Sounds%20Table%20-%20La%20web%20app%20con%20los%20mejores%20sonidos:%0Dhttps://thesoundstable.com"
+            href={`https://twitter.com/intent/tweet?text=${tweetMessage}${url}`}
             title="Twitter"
             src={logoTwitter}
           />
         );
+      }
       case ShareType.Telegram:
         return (
           <ShareLink
-            href="https://t.me/share/url?url=https://thesoundstable.com/"
+            href={`https://t.me/share/url?url=${url}`}
             title="Telegram"
             src={logoTg}
           />
@@ -48,7 +57,7 @@ export const ShareComponent: React.FC<Props> = ({ type }) => {
       case ShareType.Whatsapp:
         return (
           <ShareLink
-            href="whatsapp://send?text=https://thesoundstable.com/"
+            href={`whatsapp://send?text=${url}`}
             title="Whatsapp"
             src={logoWhatsapp}
           />

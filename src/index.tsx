@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
+import { IndexPage } from "src/components/Index/IndexPage";
 import { NotFound } from "./components/NotFound";
 
 import dataElXokas from "src/data/elXokas.json";
@@ -24,14 +25,15 @@ console.log(
   `5 The current URL is ${window.location.pathname}${window.location.search}${window.location.hash}`
 );
 
-const basePath = "/thesoundstable.com-react";
+// const basePath = "/thesoundstable.com-react";
+const basePath = "/";
 
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" children={<App data={dataElXokas} />} />
+        <Route exact path="/" children={<IndexPage />} />
         <Route exact path={basePath} children={<App data={dataElXokas} />} />
 
         <Route path={`/ElXokas`} children={<App data={dataElXokas} />} />
