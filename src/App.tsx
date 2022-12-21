@@ -19,6 +19,8 @@ const App: React.FC<AppProps> = ({ data }) => {
   const [title, setTitle] = useState<string>(data.title ?? "The Sounds Table");
   const [hashAudiosHowl, setHashAudiosHowl] = useState<any>({});
 
+  document.title = `${title} Sounds Table`;
+
   return (
     <MyGlobalContext.Provider
       value={{

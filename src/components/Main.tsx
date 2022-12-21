@@ -4,9 +4,7 @@ import { useEffect, useState } from "react";
 import { Howl } from "howler";
 
 import { Button } from "src/components/Button";
-
 import { getIdFromUrl, verifySound } from "src/logic/utils";
-
 import { useGlobalContext } from "src/hooks/useGlobalContext";
 
 import styles from "./Main.module.css";
